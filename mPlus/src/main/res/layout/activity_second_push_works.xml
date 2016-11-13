@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/DIMEN_40PX" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/DIMEN_120PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/project_investment_budget"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <EditText
+                    android:id="@+id/et_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:background="@null"
+                    android:ems="10"
+                    android:hint="@string/input_investment_budget"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:textColor="@color/text_light_grey"
+                    android:textColorHint="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="万"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_40PX" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lin_openrobot_time"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/DIMEN_120PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_openrobot_time"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_openrobot_time"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <LinearLayout
+                android:id="@+id/lin_finish_time"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/DIMEN_120PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_finish_time"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_finish_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <LinearLayout
+                android:id="@+id/lin_finish_movie_time"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/DIMEN_120PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_show_time2"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_finish_movie_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lin_show_time"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/DIMEN_120PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_show_time2"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_show_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/DIMEN_120PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_shooting_adress"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <com.mplus.mplus.view.ContainsEmojiEditText
+                    android:id="@+id/et_shooting_adress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/input_shooting_adress"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_grey"
+                    android:textColorHint="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <Button
+                android:id="@+id/btn_tonext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_120PX"
+                android:layout_marginBottom="@dimen/DIMEN_60PX"
+                android:layout_marginLeft="@dimen/DIMEN_40PX"
+                android:layout_marginRight="@dimen/DIMEN_40PX"
+                android:layout_marginTop="@dimen/DIMEN_60PX"
+                android:background="@drawable/bg_blue_btn"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

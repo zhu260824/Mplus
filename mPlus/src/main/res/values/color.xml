@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- 主色调 -->
+    <color name="blue_bg">#115488</color>
+	<!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 字体黑色 -->
+    <color name="text_dark_grey">#575757</color>
+    <!-- 字体灰色 -->
+    <color name="text_light_grey">#888888</color>
+     <!-- 透明 -->
+    <color name="text_transparent">#00000000</color>
+     <!--  -->
+    <color name="text_tag_main">#ab9f87</color>
+    
+    <!-- 主要消息提示色 -->
+    <color name="red_tip">#f84b44</color>
+    <!-- 标签红色 -->
+    <color name="red_tag">#326bae</color>
+     <!-- 标签青色 -->
+    <color name="cyan_tag">#8eb131</color>
+     <!-- 标签蓝色 -->
+    <color name="blue_tag">#2ea7e0</color>
+     <!-- 标签黄色 -->
+    <color name="yellow_tag">#f2ab13</color>
+    <color name="bg_red_tag">#dd2c34</color>
+
+    <!-- 分割线颜色 -->
+    <color name="line_light_grey">#b4b4b5</color>
+    <!-- 浅灰背景色 -->
+    <color name="main_interface_background">#eeeeee</color>
+    <!-- 电影名称字体颜色 -->
+     <color name="text_black_color">#333333</color>
+ <!-- 角色名字字体颜色 -->
+     <color name="text_black_color_two">#666666</color>
+      <!-- 项目状态字体颜色 -->
+     <color name="text_grey_color_two">#b2b2b2</color>
+     <!-- 播放状态字体颜色 -->
+     <color name="text_blue_color">#009fe8</color>
+     
+     <!-- 视频播放器 -->
+    <color name="uvv_gray">#969696</color>
+    <color name="uvv_black">#ff000000</color>
+    <color name="uvv_light_gray">#ffF0F0F0</color>
+    <color name="uvv_titlebar_bg">#7f000000</color>
+    <!-- 图片剪切 -->
+    <color name="base">#FFFFFB</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="text">#1C1C1C</color>
+    <color name="handle">#86C166</color>
+    <color name="frame">#86C166</color>
+    <color name="guide">#AA86C166</color>
+    <color name="menu_bg">#FFFFFB</color>
+    
+</resources>

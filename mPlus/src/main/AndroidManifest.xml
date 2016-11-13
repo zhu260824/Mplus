@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mplus.mplus"
+    android:versionCode="1"
+    android:versionName="1.0_0317" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="21"
+        tools:ignore="OldTargetApi" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:name="com.mplus.mplus.base.MPlusApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.mplus.mplus.activity.common.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mplus.mplus.activity.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <!-- common -->
+        <activity
+            android:name="com.mplus.mplus.activity.common.UploadPicturesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UloadPicThems" />
+        <activity
+            android:name="com.mplus.mplus.activity.common.UploadPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UloadPicThems" />
+        <activity
+            android:name="com.mplus.mplus.activity.common.UpDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UloadPicThems" />
+        <activity
+            android:name="com.mplus.mplus.activity.common.ShowTermActivity"
+            android:screenOrientation="portrait" />
+                <activity
+            android:name="com.mplus.mplus.activity.common.CropImageActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 登陆注册 -->
+        <activity
+            android:name="com.mplus.mplus.activity.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.login.PersonalDataActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.login.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 个人用户中心 -->
+        <activity
+            android:name="com.mplus.mplus.activity.usercenter.UserCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.usercenter.UserSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.usercenter.ModificationMoreMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.usercenter.ModificationOneLineMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.usercenter.ModificationGenderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.usercenter.ModificationChangePswActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.usercenter.EditActorHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.usercenter.EditActorHistoyDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/UloadPicThems" />
+        <activity
+            android:name="com.mplus.mplus.activity.usercenter.EditUserPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.usercenter.EditActorTagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.project.MyProjectActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 系统设置 -->
+        <activity
+            android:name="com.mplus.mplus.activity.systemset.SystemSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.systemset.SystemSetAboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.systemset.SystemSetFeedbackActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 影人详情页 -->
+        <activity
+            android:name="com.mplus.mplus.activity.actorcenter.ActorCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.actorcenter.SelcedUserProjectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.actorcenter.ActorPhotoListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.actorcenter.PictureBigLookActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 明星脸 -->
+
+        <activity
+            android:name="com.mplus.mplus.activity.main.StartsFaceSearchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.main.PersonSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.actorcenter.PersonSelectResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.main.ConditionSelectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialogTheme" />
+        <activity
+            android:name="com.mplus.mplus.activity.temporary.MyGetApplyActivity"
+            android:screenOrientation="portrait" />
+
+        <!--  -->
+
+        <activity
+            android:name="com.mplus.mplus.activity.main.ConditionSelectionOtherActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialogTheme" />
+
+        <!-- 发布项目 -->
+        <activity
+            android:name="com.mplus.mplus.activity.pushproject.FirstPushWorksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.pushproject.SecondPushWorksActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.pushproject.CreativeTeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.pushproject.CreativeTeamItemActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.mplus.mplus.activity.pushproject.TraitSelcedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.pushproject.RoleSelcedActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 消息中心 -->
+        <activity
+            android:name="com.mplus.mplus.activity.message.MessageCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.message.MessageMangerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.message.MessageDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 项目简介 -->
+        <activity
+            android:name="com.mplus.mplus.activity.project.ProjectDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.project.UserAddProjectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.project.JobDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.project.CollectResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.project.SearchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.temporary.ProjectNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.temporary.AlternativeImaginedFigureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.project.PushNewRoleNeedsAcivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.project.RoleSelcedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.temporary.ModificationMyRoleActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 上传简历 -->
+        <activity
+            android:name="com.mplus.mplus.activity.upresume.FirstStepActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.upresume.SecondStepActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mplus.mplus.activity.upresume.ThirdStepActivity"
+            android:screenOrientation="portrait" />
+        <!-- 推送消息页 -->
+        <activity
+            android:name="org.androidpn.client.NotificationDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UloadPicThems" />
+
+        <service
+            android:name="org.androidpn.client.NotificationService"
+            android:enabled="true"
+            android:label="NotificationService" >
+            <intent-filter>
+                <action android:name="org.androidpn.client.NotificationService" />
+            </intent-filter>
+        </service>
+
+        <!-- 友盟分享 -->
+        <!-- 分享内容编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- 微信回调activity -->
+        <activity
+            android:name="com.mplus.mplus.activity.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 腾讯SSO授权的Activity注册 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104874573" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!--   -->
+         <meta-data
+            android:name="APP_URL"
+            android:value="http://107.191.52.143:6010" />
+           <meta-data
+            android:name="TOKEN_URL"
+            android:value="http://107.191.52.143:7010" /> 
+         <!--  
+       <meta-data 
+            android:name="APP_URL"
+            android:value="http://192.168.20.146:8088" /> 
+ 
+        <meta-data
+            android:name="APP_URL"
+            android:value="http://192.168.40.19:6000" />
+        <meta-data
+            android:name="TOKEN_URL"
+            android:value="http://192.168.40.19:7000" />     --> 
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55cda2eb67e58e1971004d36" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID" />
+        <meta-data
+            android:name="design_width"
+            android:value="1080" >
+        </meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="1920" >
+        </meta-data>
+    </application>
+
+</manifest>

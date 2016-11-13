@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/DIMEN_40PX"
+    android:layout_marginRight="@dimen/DIMEN_40PX"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/DIMEN_60PX"
+    android:paddingLeft="@dimen/DIMEN_40PX"
+    android:paddingRight="@dimen/DIMEN_40PX"
+    android:paddingTop="@dimen/DIMEN_60PX" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/job_details_background"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/DIMEN_40PX"
+        android:paddingRight="@dimen/DIMEN_40PX"
+        android:paddingTop="@dimen/DIMEN_60PX" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_dark_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <TextView
+                android:id="@+id/tv_needexp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/text_blue_color"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/DIMEN_920PX"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:layout_marginBottom="@dimen/DIMEN_30PX"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:background="@color/line_light_grey" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_piancou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="片酬："
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_40PX" />
+
+                <TextView
+                    android:id="@+id/tv_paycheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_40PX" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_heighneed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身高要求："
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_40PX" />
+
+                <TextView
+                    android:id="@+id/tv_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_40PX" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="体重要求："
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_40PX" />
+
+                <TextView
+                    android:id="@+id/tv_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_40PX" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年龄要求："
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_40PX" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_40PX" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="档期要求："
+                android:textColor="@color/text_dark_grey"
+                android:textSize="@dimen/DIMEN_40PX" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_40PX" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_tag"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/actor_user_tag"
+                android:textColor="@color/text_dark_grey"
+                android:layout_marginRight="@dimen/DIMEN_20PX"
+                android:textSize="@dimen/DIMEN_40PX" />
+
+            <com.mplus.mplus.view.multipletext.MultipleTextViewGroup
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/main_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:overspread="false"
+                app:textBackground="@drawable/bg_blue_background"
+                app:textColor="@color/text_blue_color"
+                app:textLineMargin="10dp"
+                app:textPaddingBottom="3dp"
+                app:textPaddingLeft="5dp"
+                app:textPaddingRight="5dp"
+                app:textPaddingTop="3dp"
+                app:textSize="10sp"
+                app:textWordMargin="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_roledesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:lineSpacingExtra="@dimen/DIMEN_30PX"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_40PX" />
+
+        <TextView
+            android:id="@+id/tv_apply_job"
+            android:layout_width="@dimen/DIMEN_600PX"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/DIMEN_60PX"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:background="@drawable/bg_tint_blue_btn"
+            android:gravity="center"
+            android:text="@string/project_askto_job"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </LinearLayout>
+
+</LinearLayout>

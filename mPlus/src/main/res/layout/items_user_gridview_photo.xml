@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/DIMEN_300PX"
+    android:layout_height="@dimen/DIMEN_330PX"
+    android:paddingBottom="@dimen/DIMEN_30PX" >
+
+    <ImageView
+        android:id="@+id/iv_ico"
+        android:layout_width="@dimen/DIMEN_300PX"
+        android:layout_height="@dimen/DIMEN_300PX"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DIMEN_120PX"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/line_light_grey"
+        android:dividerHeight="@dimen/DIMEN_2PX"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:background="@color/line_light_grey" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/DIMEN_40PX"
+                android:paddingTop="@dimen/DIMEN_40PX"
+                android:text="@string/cancel"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <View
+                android:layout_width="@dimen/DIMEN_2PX"
+                android:layout_height="fill_parent"
+                android:background="@color/line_light_grey" />
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/DIMEN_40PX"
+                android:paddingTop="@dimen/DIMEN_40PX"
+                android:text="@string/sure"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

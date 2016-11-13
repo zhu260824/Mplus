@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/in_title"
+        layout="@layout/title" />
+
+    <ListView
+        android:id="@+id/list_history"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:layout_marginBottom="@dimen/DIMEN_180PX"
+        android:layout_below="@+id/in_title"
+        android:divider="@color/line_light_grey"
+        android:dividerHeight="@dimen/DIMEN_1PX"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/lin_coollect_option"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DIMEN_120PX"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_collect"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/actor_user_add_collect"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <View
+            android:layout_width="@dimen/DIMEN_2PX"
+            android:layout_height="@dimen/DIMEN_80PX"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_option"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/actor_user_add_option"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cdata"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DIMEN_120PX"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_bg"
+        android:gravity="center"
+        android:text="@string/actor_user_cjhange_userdata"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_44PX"
+        android:visibility="gone" />
+
+</RelativeLayout>

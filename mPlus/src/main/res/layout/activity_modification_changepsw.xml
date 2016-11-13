@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_160PX"
+        android:layout_marginTop="@dimen/DIMEN_30PX"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/DIMEN_40PX"
+        android:paddingRight="@dimen/DIMEN_40PX" >
+
+        <TextView
+            android:layout_width="@dimen/DIMEN_300PX"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/old_passwrold"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <com.mplus.mplus.view.ContainsEmojiEditText
+            android:id="@+id/et_old_passworld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/input_old_passwrold"
+            android:maxLength="12"
+            android:singleLine="true"
+            android:textColorHint="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_2PX"
+            android:background="@color/line_light_grey" />
+    
+    <LinearLayout
+       android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_160PX"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/DIMEN_40PX"
+        android:paddingRight="@dimen/DIMEN_40PX" >
+
+        <TextView
+            android:layout_width="@dimen/DIMEN_300PX"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/new_passwrold"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <com.mplus.mplus.view.ContainsEmojiEditText
+            android:id="@+id/et_new_passworld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:hint="@string/input_new_passwrold"
+            android:maxLength="18"
+            android:singleLine="true"
+            android:textColorHint="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </LinearLayout>
+<View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_2PX"
+            android:background="@color/line_light_grey" />
+    <LinearLayout
+      android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_160PX"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/DIMEN_40PX"
+        android:paddingRight="@dimen/DIMEN_40PX" >
+
+        <TextView
+            android:layout_width="@dimen/DIMEN_300PX"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="@string/sure_new_passwrold"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <com.mplus.mplus.view.ContainsEmojiEditText
+            android:id="@+id/et_sure_new_passworld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:background="@null"
+            android:hint="@string/input_sure_new_passwrold"
+            android:singleLine="true"
+            android:textColorHint="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DIMEN_159PX"
+        android:background="@color/blue_bg" >
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="@dimen/DIMEN_66PX"
+            android:layout_height="@dimen/DIMEN_66PX"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:scaleType="centerInside"
+            android:src="@drawable/main_action_add" />
+
+        <LinearLayout
+             android:id="@+id/person_select_ly"
+            android:layout_width="@dimen/DIMEN_740PX"
+            android:layout_height="@dimen/DIMEN_80PX"
+            android:layout_centerInParent="true"
+            android:background="@drawable/search_edittext"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_66PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:layout_marginRight="@dimen/DIMEN_20PX"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_search_ico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_search_tip"
+                android:textColor="@color/blue_bg"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_messages"
+            android:layout_width="@dimen/DIMEN_66PX"
+            android:layout_height="@dimen/DIMEN_66PX"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:scaleType="centerInside"
+            android:src="@drawable/main_message" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:prt="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mPullToRefreshListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        prt:ptrMode="both"
+        android:scrollbars="none" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

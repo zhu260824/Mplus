@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_159PX"
+        android:background="@color/blue_bg"
+        android:gravity="center"
+        android:text="@string/main_action_starsface"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_48PX" />
+    <!-- 输入框 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:layout_marginBottom="@dimen/DIMEN_40PX"
+        android:layout_marginLeft="@dimen/DIMEN_100PX"
+        android:layout_marginRight="@dimen/DIMEN_100PX"
+        android:layout_marginTop="@dimen/DIMEN_60PX"
+        android:background="@drawable/bg_search_white_shape"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="@dimen/DIMEN_700PX"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:src="@drawable/login_getcap" />
+
+            <com.mplus.mplus.view.ContainsEmojiEditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:background="@null"
+                android:hint="@string/starsface_input_starsname"
+                android:textSize="@dimen/DIMEN_36PX" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="@dimen/DIMEN_180PX"
+            android:layout_height="match_parent"
+            android:background="@color/blue_bg"
+            android:gravity="center"
+            android:text="@string/starsface_search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </LinearLayout>
+
+    <!-- 明星脸 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1200PX"
+        android:layout_marginLeft="@dimen/DIMEN_60PX"
+        android:layout_marginRight="@dimen/DIMEN_60PX"
+        android:background="@drawable/starface_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/DIMEN_40PX" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_80PX"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_80PX"
+                android:paddingLeft="@dimen/DIMEN_40PX"
+                android:text="@string/starsface_example_stars"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_80PX"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </LinearLayout>
+
+        <com.mplus.mplus.view.RippleView
+            android:id="@+id/main_starsface_face_ry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            rv_centered="true"
+            app:rv_rippleDuration="200" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_40PX"
+                android:layout_marginRight="@dimen/DIMEN_40PX"
+               >
+                <ImageView 
+                    android:id="@+id/sf_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_120PX"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/DIMEN_60PX"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:alpha="0.45"
+                    android:background="#3e3a39"
+                    android:gravity="center"
+                    android:text="@string/starsface_pic_tosearch"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/DIMEN_40PX" />
+            </RelativeLayout>
+        </com.mplus.mplus.view.RippleView>
+    </LinearLayout>
+
+</LinearLayout>

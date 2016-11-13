@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/DIMEN_40PX" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_120PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/blue_bg"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/project_name"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <com.mplus.mplus.view.ContainsEmojiEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/input_project_name"
+                    android:paddingLeft="@dimen/DIMEN_30PX"
+                    android:textColor="@color/text_dark_grey"
+                    android:textColorHint="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_60PX"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:visibility="gone"
+                    android:textColor="@color/blue_bg"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/project_cover_page"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_30PX"
+                android:text="@string/project_cover_page_hint"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_38PX" />
+
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="@dimen/DIMEN_940PX"
+                android:layout_height="@dimen/DIMEN_625PX"
+                android:layout_marginBottom="@dimen/DIMEN_60PX"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:layout_marginRight="@dimen/DIMEN_30PX"
+                android:layout_marginTop="@dimen/DIMEN_30PX"
+                android:scaleType="centerCrop"
+                android:src="@drawable/push_photo_default" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <LinearLayout
+                android:id="@+id/lin_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_40PX"
+                android:layout_marginTop="@dimen/DIMEN_40PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/blue_bg"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_type"
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_30PX"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <LinearLayout
+                android:id="@+id/lin_time_backgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_40PX"
+                android:layout_marginTop="@dimen/DIMEN_40PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/blue_bg"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_time_backgroup"
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_time_backgroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_30PX"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <LinearLayout
+                android:id="@+id/lin_move_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_40PX"
+                android:layout_marginTop="@dimen/DIMEN_40PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/blue_bg"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_move_type"
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_move_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_30PX"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <LinearLayout
+                android:id="@+id/lin_move_trait"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_40PX"
+                android:layout_marginTop="@dimen/DIMEN_40PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/blue_bg"
+                    android:textSize="@dimen/DIMEN_44PX"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_move_trait"
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_move_trait"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_30PX"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <LinearLayout
+                android:id="@+id/lin_shooting_permit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_40PX"
+                android:layout_marginTop="@dimen/DIMEN_40PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/blue_bg"
+                    android:textSize="@dimen/DIMEN_44PX"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_shooting_permit"
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_shooting_permit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_30PX"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <LinearLayout
+                android:id="@+id/lin_story_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_40PX"
+                android:layout_marginTop="@dimen/DIMEN_40PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/blue_bg"
+                    android:textSize="@dimen/DIMEN_44PX"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_story_about"
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_story_about"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_30PX"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:lineSpacingExtra="@dimen/DIMEN_30PX"
+                    android:maxLines="2"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <LinearLayout
+                android:id="@+id/lin_story_highlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_40PX"
+                android:layout_marginTop="@dimen/DIMEN_40PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/blue_bg"
+                    android:textSize="@dimen/DIMEN_44PX"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/project_story_highlight"
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_story_highlight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_30PX"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right|center_vertical"
+                    android:lineSpacingExtra="@dimen/DIMEN_30PX"
+                    android:maxLines="2"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_40PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <Button
+                android:id="@+id/btn_tonext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_120PX"
+                android:layout_marginBottom="@dimen/DIMEN_60PX"
+                android:layout_marginLeft="@dimen/DIMEN_40PX"
+                android:layout_marginRight="@dimen/DIMEN_40PX"
+                android:layout_marginTop="@dimen/DIMEN_60PX"
+                android:background="@drawable/bg_blue_btn"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

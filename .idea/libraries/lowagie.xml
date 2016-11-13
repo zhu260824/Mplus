@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="lowagie">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mPlus/libs/lowagie.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

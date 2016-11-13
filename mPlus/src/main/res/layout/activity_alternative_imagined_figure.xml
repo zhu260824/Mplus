@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include_alterenative_imagined"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:id="@+id/ll_project_alterenative_imagined"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:layout_below="@+id/include_alterenative_imagined"
+        android:background="@color/main_interface_background" >
+
+        <TextView
+            android:id="@+id/tv_project_name_alternative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:textColor="@color/text_blue_color"
+            android:textSize="@dimen/DIMEN_40PX" />
+
+        <TextView
+            android:id="@+id/tv_plan_name_alternative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:textColor="@color/text_blue_color"
+            android:textSize="@dimen/DIMEN_40PX" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/mPullToRefreshListView_alterenative_imagined"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_alterenative_imagined"
+        android:layout_below="@+id/ll_project_alterenative_imagined"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <TextView
+        android:id="@+id/tv_alterenative_imagined"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DIMEN_120PX"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="添加备选演员"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_44PX" />
+
+</RelativeLayout>

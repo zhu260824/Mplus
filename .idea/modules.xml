@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Mplus.iml" filepath="$PROJECT_DIR$/Mplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dtd365_Library_Android/dtd365_Library_Android.iml" filepath="$PROJECT_DIR$/dtd365_Library_Android/dtd365_Library_Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mPlus/mPlus.iml" filepath="$PROJECT_DIR$/mPlus/mPlus.iml" />
+    </modules>
+  </component>
+</project>

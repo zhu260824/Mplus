@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_800PX"
+        android:layout_marginTop="@dimen/DIMEN_30PX"
+        android:background="@color/white" >
+
+        <com.mplus.mplus.view.ContainsEmojiEditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_number"
+           
+            android:layout_margin="@dimen/DIMEN_40PX"
+            android:background="@null"
+            android:gravity="top"
+            android:singleLine="false"
+            android:textColor="@color/text_dark_grey"
+            android:textColorHint="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/DIMEN_40PX"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_36PX" />
+    </RelativeLayout>
+
+</LinearLayout>

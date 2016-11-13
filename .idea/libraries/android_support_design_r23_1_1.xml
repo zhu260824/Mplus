@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="android-support-design-r23.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mPlus/libs/android-support-design-r23.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

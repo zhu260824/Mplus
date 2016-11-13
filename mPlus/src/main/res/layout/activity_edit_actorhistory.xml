@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DIMEN_220PX"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:layout_marginRight="@dimen/DIMEN_40PX"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:background="@drawable/add_actor_history"
+        android:scaleType="centerInside" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshSwipeListView
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:smoothScrollbar="false"
+        swipe:swipeBackView="@+id/back"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeFrontView="@+id/front"
+        swipe:swipeMode="left"
+        swipe:swipeOffsetLeft="@dimen/DIMEN_120PX" />
+
+</LinearLayout>

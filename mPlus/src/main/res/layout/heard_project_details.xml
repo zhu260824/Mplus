@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/DIMEN_40PX"
+        android:paddingRight="@dimen/DIMEN_40PX"
+        android:paddingTop="@dimen/DIMEN_60PX" >
+
+        <ImageView
+            android:id="@+id/iv_ico"
+            android:layout_width="@dimen/DIMEN_350PX"
+            android:layout_height="@dimen/DIMEN_500PX"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:layout_marginTop="@dimen/DIMEN_40PX"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_66PX"
+                    android:layout_height="@dimen/DIMEN_66PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/move_ico"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_stage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_blue_color"
+                    android:textSize="@dimen/DIMEN_40PX" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:layout_marginTop="@dimen/DIMEN_30PX"
+                android:background="@color/line_light_grey" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_30PX"
+                android:singleLine="true"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_40PX" />
+
+            <TextView
+                android:id="@+id/tv_director"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_30PX"
+                android:singleLine="true"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_40PX" />
+
+            <TextView
+                android:id="@+id/tv_shootingtime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_30PX"
+                android:singleLine="true"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_40PX" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_30PX"
+                android:singleLine="true"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_40PX" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_summary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:lineSpacingExtra="@dimen/DIMEN_30PX"
+        android:padding="@dimen/DIMEN_40PX"
+        android:textColor="@color/text_light_grey"
+        android:textSize="@dimen/DIMEN_40PX" />
+
+    <LinearLayout
+        android:id="@+id/lin_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/DIMEN_30PX"
+            android:src="@drawable/open_more_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/DIMEN_30PX"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/DIMEN_40PX"
+        android:paddingRight="@dimen/DIMEN_40PX" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/DIMEN_60PX" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_66PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:scaleType="centerInside"
+                android:src="@drawable/project_job_list" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="@string/project_job_list"
+                android:textColor="@color/text_dark_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </LinearLayout>
+
+       <!--   <include layout="@layout/tag_project_list" />-->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DIMEN_2PX"
+            android:background="@color/line_light_grey"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

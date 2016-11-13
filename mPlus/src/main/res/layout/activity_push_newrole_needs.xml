@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_70PX"
+        android:layout_marginRight="@dimen/DIMEN_70PX"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lin_role"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_160PX"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                     android:textColor="@color/blue_bg"
+                    android:textSize="@dimen/DIMEN_44PX"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/text_role"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_role"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/DIMEN_30PX"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/DIMEN_30PX"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/certificate_right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_2PX"
+                android:background="@color/line_light_grey" />
+
+            <include layout="@layout/items_push_new_roles" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/DIMEN_60PX"
+                android:layout_marginTop="@dimen/DIMEN_60PX"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_push"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/DIMEN_120PX"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_blue_btn"
+                    android:text="@string/text_role_need"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/DIMEN_48PX" />
+
+                <Button
+                    android:id="@+id/btn_apply"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/DIMEN_120PX"
+                    android:layout_marginLeft="@dimen/DIMEN_60PX"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg"
+                    android:text="@string/text_call_people"
+                    android:textColor="@color/blue_bg"
+                    android:textSize="@dimen/DIMEN_48PX"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

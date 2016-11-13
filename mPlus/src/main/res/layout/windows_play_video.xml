@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black" >
+
+    <com.mplus.mplus.view.video.UniversalVideoView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        app:uvv_fitXY="true" />
+
+    <com.mplus.mplus.view.video.UniversalMediaController
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/media_controller"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:uvv_scalable="false" />
+
+</FrameLayout>

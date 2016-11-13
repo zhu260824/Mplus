@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/DIMEN_120PX" >
+
+        <include layout="@layout/title" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/DIMEN_20PX"
+            android:paddingTop="@dimen/DIMEN_20PX" >
+
+            <View
+                android:layout_width="@dimen/DIMEN_340PX"
+                android:layout_height="@dimen/DIMEN_20PX"
+                android:layout_marginRight="@dimen/DIMEN_30PX"
+                android:background="@color/line_light_grey" />
+
+            <View
+                android:layout_width="@dimen/DIMEN_340PX"
+                android:layout_height="@dimen/DIMEN_20PX"
+                android:layout_marginRight="@dimen/DIMEN_30PX"
+                android:background="@color/line_light_grey" />
+
+            <View
+                android:layout_width="@dimen/DIMEN_340PX"
+                android:layout_height="@dimen/DIMEN_20PX"
+                android:layout_marginRight="@dimen/DIMEN_30PX"
+                android:background="@color/text_blue_color" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DIMEN_220PX"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:layout_marginTop="@dimen/DIMEN_20PX"
+            android:background="@drawable/add_actor_photolist"
+            android:scaleType="centerInside" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshStaggeredGridLayout
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/mStaggeredGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            ptr:ptrAnimationStyle="rotate" >
+        </com.handmark.pulltorefresh.library.PullToRefreshStaggeredGridLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/DIMEN_120PX"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_bg"
+        android:gravity="center"
+        android:text="@string/action_sure_finsh"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_44PX" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+
+    <LinearLayout
+        android:layout_width="@dimen/DIMEN_340PX"
+        android:layout_height="@dimen/DIMEN_260PX"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:background="@drawable/main_action_add_backgroup"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/DIMEN_30PX"
+        android:paddingRight="@dimen/DIMEN_30PX" >
+
+        <LinearLayout
+            android:id="@+id/lin_add_pushwork"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DIMEN_121PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_66PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_action_add_pushwork" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:text="发布通告"
+                android:textColor="@color/blue_bg"
+                android:textSize="@dimen/DIMEN_40PX" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DIMEN_2PX"
+            android:background="@color/blue_bg" />
+
+        <LinearLayout
+             android:id="@+id/lin_add_upuserdata"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DIMEN_121PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_66PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_action_add_upuserdata" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:text="@string/prosen_addactor"
+                android:textColor="@color/blue_bg"
+                android:textSize="@dimen/DIMEN_40PX" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="recyclerview-v7-21.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dtd365_Library_Android/libs/recyclerview-v7-21.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

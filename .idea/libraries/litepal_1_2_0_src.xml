@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="litepal-1.2.0-src">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mPlus/libs/litepal-1.2.0-src.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

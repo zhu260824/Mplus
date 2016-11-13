@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_myinfo_changebirth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ly_myinfo_changebirth_child"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/DIMEN_54PX"
+        android:paddingRight="@dimen/DIMEN_54PX"
+        android:background="@drawable/bg_dialog_selector"
+        android:orientation="vertical" >
+
+             <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginBottom="@dimen/DIMEN_42PX"
+            android:layout_marginTop="@dimen/DIMEN_50PX"  >
+
+            <TextView
+                android:id="@+id/btn_myinfo_sure"
+               android:layout_width="@dimen/DIMEN_144PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/sure"
+                 android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <TextView
+                android:id="@+id/btn_myinfo_cancel"
+                 android:layout_width="@dimen/DIMEN_144PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                  android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@string/cancel"
+                 android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </RelativeLayout>
+
+              <View 
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/DIMEN_2PX"
+              android:background="@color/line_light_grey"
+              />
+             
+        <LinearLayout
+            android:layout_width="match_parent"
+             android:layout_height="@dimen/DIMEN_320PX"
+            android:layout_marginTop="@dimen/DIMEN_40PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.ywl5320.pickaddress.wheel.widget.views.WheelView
+                android:id="@+id/wv_birth_year"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <com.ywl5320.pickaddress.wheel.widget.views.WheelView
+                android:id="@+id/wv_birth_month"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+
+            <com.ywl5320.pickaddress.wheel.widget.views.WheelView
+                android:id="@+id/wv_birth_day"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+   
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/DIMEN_320PX"
+        android:layout_height="@dimen/DIMEN_320PX"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/DIMEN_60PX"
+        android:layout_marginTop="@dimen/DIMEN_120PX" >
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_roundimage"
+            android:layout_width="@dimen/DIMEN_300PX"
+            android:layout_height="@dimen/DIMEN_300PX"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_default"
+            app:siBorderColor="@color/white"
+            app:siBorderWidth="0dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_setpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/DIMEN_120PX"
+        android:text="@string/text_personal_data_set_head_portrait"
+        android:textColor="@color/text_light_grey"
+        android:textSize="@dimen/DIMEN_44PX" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_136PX"
+        android:layout_marginLeft="@dimen/DIMEN_90PX"
+        android:layout_marginRight="@dimen/DIMEN_90PX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_name"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <com.mplus.mplus.view.ContainsEmojiEditText
+            android:id="@+id/et_nike_nanme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:background="@color/white"
+            android:hint="@string/text_name"
+            android:singleLine="true"
+            android:textColor="@color/text_dark_grey"
+            android:textColorHint="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_2PX"
+        android:layout_marginLeft="@dimen/DIMEN_90PX"
+        android:layout_marginRight="@dimen/DIMEN_90PX"
+        android:background="@color/line_light_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_136PX"
+        android:layout_marginLeft="@dimen/DIMEN_90PX"
+        android:layout_marginRight="@dimen/DIMEN_90PX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_personal_data_gender"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <ImageView
+            android:id="@+id/iv_sex_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:scaleType="centerInside"
+            android:src="@drawable/login_man_on" />
+
+        <TextView
+            android:id="@+id/tv_sex_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="@string/login_man"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <ImageView
+            android:id="@+id/iv_sex_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_60PX"
+            android:scaleType="centerInside"
+            android:src="@drawable/login_woman_off" />
+
+        <TextView
+            android:id="@+id/tv_sex_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:text="@string/login_woman"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_2PX"
+        android:layout_marginLeft="@dimen/DIMEN_90PX"
+        android:layout_marginRight="@dimen/DIMEN_90PX"
+        android:background="@color/line_light_grey" />
+
+    <LinearLayout
+        android:id="@+id/lin_adress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_136PX"
+        android:layout_marginLeft="@dimen/DIMEN_90PX"
+        android:layout_marginRight="@dimen/DIMEN_90PX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_personal_data_address"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <TextView
+            android:id="@+id/tv_adress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="@string/login_selced_adress"
+            android:textColor="@color/text_dark_grey"
+            android:textColorHint="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <ImageView
+            android:layout_width="@dimen/DIMEN_31PX"
+            android:layout_height="@dimen/DIMEN_48PX"
+            android:scaleType="centerInside"
+            android:src="@drawable/right_arrows" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_2PX"
+        android:layout_marginLeft="@dimen/DIMEN_90PX"
+        android:layout_marginRight="@dimen/DIMEN_90PX"
+        android:background="@color/line_light_grey"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/but_next_personal_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_120PX"
+        android:layout_marginLeft="@dimen/DIMEN_90PX"
+        android:layout_marginRight="@dimen/DIMEN_90PX"
+        android:layout_marginTop="@dimen/DIMEN_80PX"
+        android:background="@drawable/bg_blue_btn"
+        android:text="@string/text_personal_data_next_step"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_44PX" />
+
+</LinearLayout>

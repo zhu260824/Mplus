@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 导航条 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_159PX"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/select_concel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/DIMEN_30PX"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="筛选条件"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="@dimen/DIMEN_48PX" />
+
+        <TextView
+            android:id="@+id/select_sure_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/DIMEN_30PX"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:background="@color/line_light_grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_30PX"
+        android:background="@color/main_interface_background" />
+
+    <!-- 性别 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_140PX"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="性别"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <RadioGroup
+            android:id="@+id/gender_rg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_140PX"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/male_rb"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tag_gray_select"
+                android:button="@null"
+                android:gravity="center"
+                android:text="男"
+                android:textColor="@drawable/textcolor_chechboxview"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/female_rb"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tag_gray_select"
+                android:button="@null"
+                android:gravity="center"
+                android:text="女"
+                android:textColor="@drawable/textcolor_chechboxview"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/no_rb"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tag_gray_select"
+                android:button="@null"
+                android:gravity="center"
+                android:text="不限"
+                android:textColor="@drawable/textcolor_chechboxview"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:background="@color/line_light_grey" />
+
+    <!-- 年龄 -->
+
+    <LinearLayout
+        android:id="@+id/condition_select_age"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_140PX"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="年龄"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <TextView
+            android:id="@+id/condition_select_agevalue_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/DIMEN_40PX"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:src="@drawable/certificate_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:background="@color/line_light_grey" />
+
+    <!-- 身高 -->
+
+    <LinearLayout
+        android:id="@+id/condition_select_height"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_140PX"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="身高"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <TextView
+            android:id="@+id/condition_select_heightvalue_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/DIMEN_40PX"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:src="@drawable/certificate_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:background="@color/line_light_grey" />
+
+    <!-- 体重 -->
+
+    <LinearLayout
+        android:id="@+id/condition_select_weight"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_140PX"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="体重"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <TextView
+            android:id="@+id/condition_select_weightvalue_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/DIMEN_40PX"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/DIMEN_40PX"
+            android:src="@drawable/certificate_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:background="@color/line_light_grey" />
+
+    <!-- 气质 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DIMEN_40PX"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/DIMEN_140PX"
+            android:text="标签"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <com.mplus.mplus.view.multipletext.MultipleTextViewGroup
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/main_rl"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_40PX"
+            android:layout_marginBottom="@dimen/DIMEN_40PX"
+            app:overspread="false"
+            app:textBackground="@drawable/bg_text_backgroup_gray"
+            app:textColor="@color/text_light_grey"
+            app:textLineMargin="10dp"
+            app:textPaddingBottom="3dp"
+            app:textPaddingLeft="5dp"
+            app:textPaddingRight="5dp"
+            app:textPaddingTop="3dp"
+            app:textSize="10sp"
+            app:textWordMargin="5dp" />
+    </LinearLayout>
+
+</LinearLayout>

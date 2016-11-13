@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_330PX"
+                android:layout_height="@dimen/DIMEN_300PX"
+                android:layout_marginTop="@dimen/DIMEN_160PX"
+                android:scaleType="centerInside"
+                android:src="@drawable/set_about_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_60PX"
+                android:gravity="center"
+                android:text="@string/text_system_about_band"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_40PX"
+                android:gravity="center"
+                android:text="@string/text_system_about_url"
+               android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_40PX" />
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_120PX"
+                android:layout_marginTop="@dimen/DIMEN_160PX"
+                android:background="@drawable/bg_blue_btn"
+                android:layout_margin="@dimen/DIMEN_160PX"
+                android:text="@string/text_share_to_friends"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/DIMEN_100PX"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_mtrem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/text_reset_register_user_treaty"
+                android:textColor="@color/blue_bg"
+                android:textSize="@dimen/DIMEN_40PX" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                 android:layout_marginTop="@dimen/DIMEN_40PX"
+                android:text="copyright@2015-2020"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_40PX" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

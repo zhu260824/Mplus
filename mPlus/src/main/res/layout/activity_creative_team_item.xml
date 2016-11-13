@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/DIMEN_60PX"
+                android:paddingLeft="@dimen/DIMEN_40PX"
+                android:paddingRight="@dimen/DIMEN_40PX" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_160PX"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="*"
+                        android:textColor="@color/blue_bg"
+                        android:textSize="@dimen/DIMEN_44PX" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/text_role"
+                        android:textColor="@color/text_light_grey"
+                        android:textSize="@dimen/DIMEN_44PX" />
+
+                    <LinearLayout
+                        android:id="@+id/ly_role"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right" >
+
+                        <TextView
+                            android:id="@+id/tv_role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/DIMEN_40PX"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/text_light_grey"
+                            android:textSize="@dimen/DIMEN_44PX" />
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_32PX"
+                            android:layout_height="@dimen/DIMEN_47PX"
+                            android:src="@drawable/right_arrows" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_2PX"
+                    android:background="@color/line_light_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_160PX"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="*"
+                        android:textColor="@color/blue_bg"
+                        android:textSize="@dimen/DIMEN_44PX" />
+
+                    <TextView
+                        android:layout_width="@dimen/DIMEN_300PX"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/text_name"
+                        android:textColor="@color/text_light_grey"
+                        android:textSize="@dimen/DIMEN_44PX" />
+
+                    <com.mplus.mplus.view.ContainsEmojiEditText
+                        android:id="@+id/et_name"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/DIMEN_100PX"
+                        android:layout_weight="1"
+                        android:background="@drawable/chat_dialog_box"
+                        android:padding="@dimen/DIMEN_10PX"
+                        android:singleLine="true"
+                        android:hint="@string/text_name"
+                        android:textColor="@color/text_light_grey"
+                        android:textColorHint="@color/text_light_grey"
+                        android:textSize="@dimen/DIMEN_44PX" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_2PX"
+                    android:background="@color/line_light_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_160PX"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="*"
+                        android:textColor="@color/blue_bg"
+                        android:textSize="@dimen/DIMEN_44PX" />
+
+                    <TextView
+                        android:layout_width="@dimen/DIMEN_300PX"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/role_nickname"
+                        android:textColor="@color/text_light_grey"
+                        android:textSize="@dimen/DIMEN_44PX" />
+
+                    <com.mplus.mplus.view.ContainsEmojiEditText
+                        android:id="@+id/et_nickname"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/DIMEN_100PX"
+                        android:layout_weight="1"
+                        android:background="@drawable/chat_dialog_box"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/role_nickname"
+                        android:padding="@dimen/DIMEN_10PX"
+                        android:singleLine="true"
+                        android:textColor="@color/text_light_grey"
+                        android:textColorHint="@color/text_light_grey"
+                        android:textSize="@dimen/DIMEN_44PX" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_2PX"
+                    android:visibility="gone"
+                    android:background="@color/line_light_grey" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_160PX"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="*"
+                        android:textColor="@color/blue_bg"
+                        android:textSize="@dimen/DIMEN_44PX" />
+
+                    <TextView
+                        android:layout_width="@dimen/DIMEN_300PX"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/consensus_apply_static"
+                        android:textColor="@color/text_light_grey"
+                        android:textSize="@dimen/DIMEN_44PX" />
+
+                    <LinearLayout
+                        android:id="@+id/lin_apply_static"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/DIMEN_100PX"
+                        android:background="@drawable/chat_dialog_box"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="0dp" >
+
+                        <TextView
+                            android:id="@+id/tv_state"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/DIMEN_10PX"
+                            android:singleLine="true"
+                            android:text="@string/text_plan_please"
+                            android:textColor="@color/text_light_grey"
+                            android:textSize="@dimen/DIMEN_44PX" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/need_enlist" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_2PX"
+                    android:visibility="gone"
+                    android:background="@color/line_light_grey" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/DIMEN_60PX"
+                    android:layout_marginTop="@dimen/DIMEN_60PX"
+                    android:text="@string/text_describe"
+                    android:visibility="gone"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <com.mplus.mplus.view.ContainsEmojiEditText
+                    android:id="@+id/et_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/chat_dialog_box"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:textColor="@color/text_light_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_commit"
+                android:layout_width="@dimen/DIMEN_600PX"
+                android:layout_height="@dimen/DIMEN_120PX"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/DIMEN_60PX"
+                android:layout_marginTop="@dimen/DIMEN_60PX"
+                android:background="@drawable/bg_blue_btn"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_159PX"
+        android:background="@color/blue_bg"
+        android:gravity="center"
+        android:text="@string/main_usercenter_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/DIMEN_48PX" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_bg"
+        android:padding="@dimen/DIMEN_40PX" >
+
+        <LinearLayout
+            android:id="@+id/lin_nologin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_ico"
+            android:gravity="right" >
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="@dimen/DIMEN_250PX"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="@dimen/DIMEN_44PX"
+                android:background="@drawable/bg_ripple_login_light_blue"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="@dimen/DIMEN_250PX"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_marginLeft="@dimen/DIMEN_60PX"
+                android:background="@drawable/bg_blue_btn"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_islogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_ico"
+            android:gravity="center_vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_nikename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/DIMEN_40PX"
+                android:maxLength="7"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="@dimen/DIMEN_300PX"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_blue_btn"
+                android:text="@string/safety_quit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </RelativeLayout>
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_ico"
+            android:layout_width="@dimen/DIMEN_200PX"
+            android:layout_height="@dimen/DIMEN_200PX"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_100PX"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_default"
+            app:siBorderColor="@color/white"
+            app:siBorderWidth="2dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/DIMEN_70PX"
+        android:paddingRight="@dimen/DIMEN_70PX" >
+
+        <!-- 发布的项目 -->
+
+        <LinearLayout
+            android:id="@+id/lin_myproject"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_160PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_66PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:background="@drawable/user_fabu_icon"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/user_pushed_project"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_arrows" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:background="@color/line_light_grey" />
+
+        <!-- 参与的项目 -->
+
+        <LinearLayout
+            android:id="@+id/lin_user_add"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_160PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_66PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:background="@drawable/user_sanyu_icon"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/user_add_project"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_arrows" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:background="@color/line_light_grey" />
+
+        <!-- 基本资料 -->
+
+        <LinearLayout
+            android:id="@+id/lin_base_data"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_160PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_66PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:background="@drawable/user_base_icon"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/user_base_data"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_arrows" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:background="@color/line_light_grey" />
+
+        <!-- 账户设置 -->
+
+        <LinearLayout
+            android:id="@+id/lin_user_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_160PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_66PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:background="@drawable/user_count_icon"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/user_usered_setting"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_arrows" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_1PX"
+            android:background="@color/line_light_grey" />
+
+        <!-- 系统设置 -->
+
+        <LinearLayout
+            android:id="@+id/lin_sys_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_160PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_66PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:background="@drawable/user_system_settings"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/user_system_setting"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_arrows" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_300PX"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/DIMEN_256PX"
+            android:layout_height="@dimen/DIMEN_190PX"
+            android:layout_marginLeft="@dimen/DIMEN_60PX"
+            android:layout_marginRight="@dimen/DIMEN_50PX"
+            android:layout_marginTop="@dimen/DIMEN_60PX" >
+
+            <ImageView
+                android:id="@+id/iv_project_items"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/formwork" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/DIMEN_60PX"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_movie_project"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black_color"
+                    android:textSize="@dimen/DIMEN_44PX" />
+
+                <TextView
+                    android:id="@+id/tv_play_state_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/DIMEN_40PX"
+                    android:textColor="@color/text_blue_color"
+                    android:textSize="@dimen/DIMEN_36PX" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_40PX"
+                android:layout_marginRight="@dimen/DIMEN_40PX"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical|left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_director"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_black_color_two"
+                        android:textSize="@dimen/DIMEN_40PX" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/DIMEN_10PX"
+                        android:gravity="center_vertical|left"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_66PX"
+                            android:layout_height="@dimen/DIMEN_66PX"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/director" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/projectlist_director"
+                            android:textColor="@color/text_grey_color_two"
+                            android:textSize="@dimen/DIMEN_36PX" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+               android:gravity="center_vertical|left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_role_project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_black_color_two"
+                        android:textSize="@dimen/DIMEN_40PX" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/DIMEN_10PX"
+                        android:gravity="center_vertical|left"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_66PX"
+                            android:layout_height="@dimen/DIMEN_66PX"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/waiting_for_the_selection" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/projectlist_after_toselced"
+                            android:textColor="@color/text_grey_color_two"
+                            android:textSize="@dimen/DIMEN_36PX" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                     android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_date_project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_black_color_two"
+                        android:textSize="@dimen/DIMEN_40PX" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/DIMEN_10PX"
+                        android:gravity="center_vertical|left"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="@dimen/DIMEN_66PX"
+                            android:layout_height="@dimen/DIMEN_66PX"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/starting_up" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/project_openrobot_time"
+                            android:textColor="@color/text_grey_color_two"
+                            android:textSize="@dimen/DIMEN_36PX" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/DIMEN_1000PX"
+        android:layout_height="@dimen/DIMEN_1PX"
+        android:layout_marginBottom="@dimen/DIMEN_20PX"
+        android:layout_marginLeft="@dimen/DIMEN_60PX"
+        android:layout_marginRight="@dimen/DIMEN_50PX"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:background="@color/line_light_grey" />
+
+</LinearLayout>

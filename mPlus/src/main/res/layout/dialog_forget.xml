@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/DIMEN_70PX" >
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/text_offon_reset_password"
+        android:textColor="@color/text_light_grey"
+        android:textSize="@dimen/DIMEN_44PX" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_90PX"
+        android:layout_marginTop="@dimen/DIMEN_100PX"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/items_button_red"
+            android:gravity="center"
+            android:text="@string/cancel" 
+            android:textColor="@color/blue_bg"
+            android:textSize="@dimen/DIMEN_48PX" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/DIMEN_70PX"
+            android:layout_weight="1"
+            android:background="@drawable/red_roud_dialog_btn"
+            android:gravity="center"
+            android:text="@string/text_register_reset_password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_48PX" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:layout_marginRight="@dimen/DIMEN_40PX"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="@style/my_pb_style"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DIMEN_8PX"
+            android:visibility="gone"
+            android:max="100" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/DIMEN_20PX"
+            android:paddingTop="@dimen/DIMEN_20PX"
+            android:text="@string/chang_your_pic"
+            android:textColor="@color/text_dark_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/DIMEN_2PX"
+            android:background="@color/text_light_grey" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/DIMEN_40PX"
+            android:paddingTop="@dimen/DIMEN_40PX" >
+
+            <LinearLayout
+                android:id="@+id/lin_from_cramea"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selced_from_carem" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/DIMEN_10PX"
+                    android:text="@string/selced_pic_from_camera"
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_from_photo"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/selced_from_photo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/DIMEN_10PX"
+                    android:text="@string/selced_pic_from_photo"
+                    android:textColor="@color/text_dark_grey"
+                    android:textSize="@dimen/DIMEN_44PX" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

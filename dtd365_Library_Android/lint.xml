@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ExtraTranslation" severity="ignore" />
+    <issue id="InflateParams">
+        <ignore path="src/com/huewu/pla/lib/MultiColumnPullToRefreshListView.java" />
+    </issue>
+    <issue id="MissingRegistered">
+        <ignore path="res/layout/sample_pull_to_refresh_act.xml" />
+    </issue>
+    <issue id="MissingTranslation">
+        <ignore path="res/values/pull_refresh_strings.xml" />
+        <ignore path="res/values/pull_refresh_strings.xml" />
+        <ignore path="res/values/strings.xml" />
+        <ignore path="res/values/strings.xml" />
+    </issue>
+    <issue id="WrongCall" severity="ignore" />
+</lint>

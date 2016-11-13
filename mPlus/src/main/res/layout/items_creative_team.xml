@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/DIMEN_480PX"
+    android:layout_height="@dimen/DIMEN_540PX"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/DIMEN_60PX"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:layout_marginRight="@dimen/DIMEN_40PX"
+        android:layout_marginTop="@dimen/DIMEN_60PX"
+        android:background="@drawable/round_items_creative_team"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/DIMEN_40PX" >
+
+        <TextView
+            android:id="@+id/tv_role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="导演"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:gravity="center_horizontal"
+            android:text="(令狐冲)"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:gravity="center_horizontal"
+            android:text="待签约"
+            android:visibility="gone"
+            android:textColor="@color/blue_bg"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="@dimen/DIMEN_240PX"
+            android:layout_height="@dimen/DIMEN_80PX"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:background="@drawable/bg_blue_btn"
+            android:text="编辑"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/DIMEN_40PX"
+        android:layout_marginTop="@dimen/DIMEN_60PX"
+        android:src="@drawable/create_tems_de" />
+
+</RelativeLayout>

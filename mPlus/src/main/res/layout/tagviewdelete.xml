@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mplus.mplus.view.multipletext.MultipleTextViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/DIMEN_40PX"
+    android:layout_marginRight="@dimen/DIMEN_40PX"
+    app:overspread="false"
+    app:textBackground="@drawable/tag_bg_icon"
+    app:textColor="@color/text_light_grey"
+    app:textLineMargin="10dp"
+    app:textPaddingBottom="3dp"
+    app:textPaddingLeft="5dp"
+    app:textPaddingRight="8dp"
+    app:textPaddingTop="3dp"
+    app:textSize="10sp"
+    app:textWordMargin="5dp" />

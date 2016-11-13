@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_120PX"
+        android:layout_margin="@dimen/DIMEN_40PX"
+        android:background="@drawable/search_edittext"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/DIMEN_30PX" >
+
+        <com.mplus.mplus.view.ContainsEmojiEditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/text_light_grey"
+            android:textColorHint="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/DIMEN_66PX"
+            android:layout_height="@dimen/DIMEN_66PX"
+            android:scaleType="centerInside"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+
+</LinearLayout>

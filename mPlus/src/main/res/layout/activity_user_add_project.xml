@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:id="@+id/person_select_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_180PX"
+        android:background="@color/blue_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/DIMEN_30PX" >
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:layout_weight="1"
+            android:background="@drawable/consensusmanger_letf_off"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/user_project_add"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_44PX" />
+
+        <TextView
+            android:id="@+id/tv_ask"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:layout_weight="1"
+            android:background="@drawable/consensusmanger_right_on"
+            android:gravity="center"
+            android:text="@string/user_project_askto"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_44PX" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/list_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/DIMEN_130PX" >
+    </FrameLayout>
+
+</LinearLayout>

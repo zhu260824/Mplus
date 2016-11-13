@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_interface_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/DIMEN_70PX"
+        android:paddingRight="@dimen/DIMEN_70PX" >
+
+        <LinearLayout
+            android:id="@+id/lin_mail_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_160PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_66PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:background="@drawable/user_mail_address" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:gravity="center_vertical"
+                android:text="@string/user_mail_address"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <TextView
+                android:id="@+id/tv_mail_address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/DIMEN_30PX"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_arrows" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_2PX"
+            android:background="@color/line_light_grey" />
+
+        <LinearLayout
+            android:id="@+id/lin_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_160PX"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_66PX"
+                android:layout_height="@dimen/DIMEN_66PX"
+                android:background="@drawable/user_change_password" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/DIMEN_30PX"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/user_change_password"
+                android:textColor="@color/text_light_grey"
+                android:textSize="@dimen/DIMEN_44PX" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/right_arrows" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

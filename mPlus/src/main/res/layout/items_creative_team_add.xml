@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/DIMEN_480PX"
+    android:layout_height="@dimen/DIMEN_540PX"
+    android:background="@color/main_interface_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/DIMEN_60PX"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:layout_marginRight="@dimen/DIMEN_40PX"
+        android:layout_marginTop="@dimen/DIMEN_60PX"
+        android:background="@drawable/round_items_creative_team"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/DIMEN_40PX" >
+
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            />
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="@dimen/DIMEN_160PX"
+            android:layout_height="@dimen/DIMEN_160PX"
+            android:gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vocational_role_add" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:gravity="center_horizontal"
+            android:text="点击添加角色"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_44PX" />
+         <View 
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

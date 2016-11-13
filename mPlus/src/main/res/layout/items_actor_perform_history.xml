@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/DIMEN_60PX"
+    android:paddingTop="@dimen/DIMEN_60PX" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="@dimen/DIMEN_40PX"
+        android:layout_weight="1"
+        android:gravity="left|top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_40PX" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_40PX" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/DIMEN_30PX"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/text_light_grey"
+            android:textSize="@dimen/DIMEN_40PX" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_ico"
+        android:layout_width="@dimen/DIMEN_320PX"
+        android:layout_height="@dimen/DIMEN_220PX"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>

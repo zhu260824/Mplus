@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_interface_background"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/DIMEN_40PX" >
+
+            <com.mplus.mplus.view.GridViewForScrollView
+                android:id="@+id/gv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:verticalSpacing="@dimen/DIMEN_20PX"
+                android:horizontalSpacing="@dimen/DIMEN_40PX"
+                 />
+
+            <TextView
+                android:id="@+id/tv_tonext"
+                android:layout_width="@dimen/DIMEN_600PX"
+                android:layout_height="@dimen/DIMEN_100PX"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/DIMEN_60PX"
+                android:layout_marginTop="@dimen/DIMEN_60PX"
+                android:background="@drawable/bg_blue_btn"
+                android:gravity="center"
+                android:text="@string/text_submit_examine_and_verify"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_44PX" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
